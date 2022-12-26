@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+
+import  Profile  from "./Profile/Profile";
 
 function App() {
+  
+  const fullName= "Sarra"
+  const bio="Licence en Mkg / Master en Entrepreneuriat / Etudiante FullStack "
+  const profession="étudiante"
+  const handleName=()=>{alert(fullName)}
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{textAlign: "center"}}>
+      
+      <Profile  
+      fullName= {fullName}
+      bio={bio} 
+      profession={profession}
+      handleName={handleName}
+      ></Profile>
+      
+
     </div>
   );
 }
